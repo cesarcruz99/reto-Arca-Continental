@@ -113,7 +113,7 @@ La metodología propuesta consta de cuatro etapas fundamentales para el desarrol
 
 
 
-![RFs](https://github.com/Mrjojosa/Mrjojosa/blob/main/Assets/ademanosLoginApp.png)
+![RFs]([https://github.com/Mrjojosa/Mrjojosa/blob/main/Assets/ademanosLoginApp.png](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png))
 
 
 
