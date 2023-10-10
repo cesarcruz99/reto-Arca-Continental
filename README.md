@@ -113,14 +113,14 @@ La metodología propuesta consta de cuatro etapas fundamentales para el desarrol
 
 
 
-![RFs]((https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png))
+![RFs](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png)
 
 
 
 **Revisión de Literatura**
 
 
-![Licencias]((https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/licencias%20software.png))
+![Licencias](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/licencias%20software.png)
 
 
 
