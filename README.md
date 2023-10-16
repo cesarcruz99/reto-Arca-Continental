@@ -1,348 +1,35 @@
 # reto-Arca-Continental
 
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 2.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 **Resumen**
 
-Esta investigación destaca la efectividad y potencial de una metodología compuesta por cuatro etapas para la creación de anuncios publicitarios, donde se integran modelos generativos y un chatbot para mejorar la precisión en la disposición de elementos visuales y textuales. Los hallazgos subrayan mejoras sustanciales en la eficiencia y calidad de los anuncios, enfatizando la relevancia de aplicar tecnología avanzada en la industria publicitaria. Las implicaciones de este enfoque se extienden a la industria publicitaria y del marketing, mostrando su viabilidad en la creación ágil y personalizada de anuncios adaptados a las preferencias del público. Se proponen recomendaciones para futuras investigaciones para mejorar la calidad del texto y la evaluación de la percepción de los consumidores ante estos anuncios.
+Esta investigación resalta la efectividad de una metodología compuesta por cuatro etapas para la creación de anuncios publicitarios, donde se integran modelos generativos y un chatbot. Estas mejoras en la eficiencia y calidad de los anuncios subrayan la importancia de aplicar tecnología avanzada en la industria publicitaria. Además, la metodología puede ser aplicada en diversos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las preferencias del público.
 
 **Introducción**
 
+Esta investigación se centra en una metodología compuesta por cuatro etapas esenciales para la concepción y creación de anuncios publicitarios. El enfoque de este estudio se basa en optimizar la elaboración de anuncios mediante la aplicación de tecnología avanzada, específicamente la integración de modelos generativos y un chatbot que permita definir con mayor precisión la disposición de elementos visuales y textuales en el anuncio. Este enfoque surge a partir de la observación de la necesidad de mejorar la eficiencia y calidad en la generación de contenido publicitario.
 
+**Arquitectura de la Solución**
 
-* Presentación del tema de investigación.
-
-La investigación se centra en una metodología compuesta por cuatro etapas esenciales para la concepción y creación de anuncios publicitarios. El enfoque de este estudio se basa en optimizar la elaboración de anuncios mediante la aplicación de tecnología avanzada, específicamente la integración de modelos generativos y un chatbot que permita definir con mayor precisión la disposición de elementos visuales y textuales en el anuncio. Este enfoque surge a partir de la observación de la necesidad de mejorar la eficiencia y calidad en la generación de contenido publicitario.
-
-
-
-* Objetivos de la investigación.
-
-Los objetivos principales de la investigación son los siguientes:
+La solución propuesta es la siguiente:
 
 
 
-* Analizar la eficacia y versatilidad de la metodología propuesta para la creación de anuncios publicitarios
-* Evaluar la precisión y capacidad de adaptación del chatbot en la definición detallada de la disposición de elementos visuales y textuales en el anuncio.
-* Investigar la eficiencia y calidad de los modelos generativos en la creación de la plantilla del fondo del anuncio, la representación de productos a exhibir y la generación de texto específico.
-* Proponer posibles mejoras y ajustes en la metodología con el fin de perfeccionar la generación de anuncios publicitarios.
-* Justificación y relevancia.
+1. El usuario presenta una idea general.
+2. El chatbot permite la especificación precisa de la disposición de elementos visuales y textuales.
+3. Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del anuncio y otro para generar las imágenes necesarias, como productos, personas o fondos.
+4. Un modelo adicional genera el texto específico del anuncio.
 
-La relevancia de esta investigación radica en la creciente importancia de la publicidad y su influencia en la toma de decisiones de los consumidores. La eficacia y atractivo de un anuncio publicitario pueden determinar el éxito de una campaña comercial y el desempeño de una empresa en el mercado. Por lo tanto, es importante explorar estrategias y enfoques innovadores que optimicen la creación de anuncios publicitarios, permitiendo una comunicación más efectiva y persuasiva con el público objetivo. La utilización de tecnología avanzada, como los modelos generativos y chatbots, ofrece una oportunidad valiosa para mejorar la eficiencia y calidad de la producción publicitaria, lo que justifica la realización de este estudio.
-
-**Metodología**
-
-La metodología propuesta consta de cuatro etapas fundamentales para el desarrollo de un anuncio publicitario. En primer lugar, el usuario presenta una noción general de cómo desea el anuncio. A continuación, se facilita un chatbot para que especifique de manera precisa la idea relacionada con la disposición de la imagen, plantilla o texto que deberá ser incorporado. Posteriormente, se emplean modelos generativos para elaborar la estructura visual del fondo del anuncio y representar los productos que se mostrarán en el mismo. Asimismo, se recurre a un modelo adicional para generar el texto específico correspondiente al anuncio.
-
-**Requerimientos**
-
-
-<table>
-  <tr>
-   <td><strong>ID</strong>
-   </td>
-   <td><strong>Requerimiento</strong>
-   </td>
-   <td><strong>Descripción</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>RF01
-   </td>
-   <td>Ingresar datos de entrada iniciales
-   </td>
-   <td>El usuario debe introducir usando lenguaje natural los datos descriptivos del resultado que se desea.
-   </td>
-  </tr>
-  <tr>
-   <td>RF02
-   </td>
-   <td>Seleccionar resultados del proceso de literatura
-   </td>
-   <td>El usuario seleccionará entre las opciones producidas para el primer paso que consiste en generar un texto que ayude a desarrollar la idea.
-   </td>
-  </tr>
-  <tr>
-   <td>RF03
-   </td>
-   <td>Seleccionar resultados del proceso de plantilla
-   </td>
-   <td>El usuario seleccionará entre las opciones producidas para el segundo paso que consiste en generar una plantilla que sirva de estructura para la generación de la imagen o imágenes a introducir.
-   </td>
-  </tr>
-  <tr>
-   <td>RF04
-   </td>
-   <td>Seleccionar resultados del proceso de imagen
-   </td>
-   <td>El usuario seleccionará entre las opciones producidas para el tercer paso que consiste en generar varias imágenes que pueden encajar con la descripción del diseño del producto.
-   </td>
-  </tr>
-  <tr>
-   <td>RF05
-   </td>
-   <td>Seleccionar resultados del proceso de texto
-   </td>
-   <td>El usuario seleccionará entre las opciones producidas para el cuarto paso que consiste en generar varias fuentes que puedan encajar con lo anteriormente desarrollado, siendo posicionado donde el usuario lo desee.
-   </td>
-  </tr>
-  <tr>
-   <td>RF06
-   </td>
-   <td>Corregir apartados del anuncio
-   </td>
-   <td>El usuario será capaz de modificar la imagen final siempre y cuando esto esté dentro de las capacidades del programa para llenar espacios vacíos.
-   </td>
-  </tr>
-  <tr>
-   <td>RF07
-   </td>
-   <td>Devolver imagen final
-   </td>
-   <td>El sistema devuelve la imagen finalizada al usuario.
-   </td>
-  </tr>
-</table>
+Se propone esta arquitectura con la convicción de que podría permitir una creación más eficiente, al mismo tiempo que asegura la coherencia y la calidad en cada etapa del proceso de generación de anuncios.
 
 
 
-![RFs](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png)
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-
-**Revisión de Literatura**
-
-
-![Licencias](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/licencias%20software.png)
+![alt_text](images/image1.png "image_tooltip")
 
 
-
-Obtenida de [https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses).
-
-
-    1.   	Licencia MIT (Massachusetts Institute of Technology):
-
-
-
-* Tipo de Licencia: Licencia de software libre y permisiva.
-* Características Clave: Es una licencia de código abierto simple y permisiva que permite a los desarrolladores utilizar, modificar y distribuir el software con poca restricción. Requiere que se incluya el aviso de derechos de autor y la licencia en las redistribuciones. No impone restricciones significativas en cómo se utiliza el software.
-
-    2.       Licencia Apache 2.0:
-
-* Tipo de Licencia: Licencia de software libre y permisiva.
-* Características Clave: La Licencia Apache 2.0 es una licencia de código abierto que permite la modificación, distribución y sublicencia del software. Requiere que se incluyan avisos de derechos de autor y licencia en las redistribuciones, y también incluye una disposición que aborda las patentes. Ofrece protección legal adicional para los contribuyentes y usuarios del software.
-
-    3.   	Creative ML OpenRAIL-M (Machine Learning Open-Source for Creativity):
-
-* Tipo de Licencia: Esta es una licencia específica para proyectos de aprendizaje automático y creatividad.
-* Características Clave: La licencia Creative ML OpenRAIL-M es una licencia de código abierto que se utiliza en proyectos de aprendizaje automático relacionados con la creatividad. Su enfoque es promover la colaboración y el uso creativo de modelos de aprendizaje automático. Puede incluir términos específicos relacionados con la atribución y el uso de los modelos generados.
-* Restricciones:
-    * Restricciones de uso: La licencia establece restricciones de uso, como no utilizar el Modelo para actividades ilegales, no dañar a menores, no difundir información falsa con el propósito de dañar a otros, entre otras restricciones detalladas en la sección "Attachment A: Use Restrictions" de la licencia. Es importante asegurarse de que el uso del Modelo cumpla con estas restricciones.
-    * Responsabilidad: La licencia establece que los usuarios son responsables de las salidas generadas por el Modelo. Por lo tanto, si utiliza el Modelo para crear contenido publicitario, debe garantizar que dicho contenido cumpla con todas las leyes y regulaciones aplicables y no sea perjudicial ni engañoso.
-    * Marcas comerciales: Como se mencionó anteriormente, no está permitido utilizar las marcas comerciales del Licenciante en su publicidad, según los términos de la licencia.
-    * Cumplimiento de la licencia: Asegúrese de cumplir con todos los términos y condiciones de la licencia, incluidas las disposiciones sobre distribución y redistribución, y cualquier otro requisito establecido en la licencia.
-* Chatbot para Generación de Ideas.
-
-El primer paso es generar la idea general del anuncio. Para ello, se puede utilizar un chatbot como ChatGPT, que puede generar texto creativo y original. El chatbot puede ayudar a desarrollar la idea y a hacerla más específica.
-
-
-<table>
-  <tr>
-   <td>Chatbot
-   </td>
-   <td>Tipo de licencia
-   </td>
-   <td>Descripción
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-2
-   </td>
-   <td>MIT
-   </td>
-   <td>Chatbot de gran modelo de lenguaje preentrenado de OpenAI. Puede generar texto creativo y original, traducir idiomas, escribir diferentes tipos de contenido creativo y responder a sus preguntas de manera informativa.
-   </td>
-  </tr>
-  <tr>
-   <td>Rasa
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Framework de chatbot de código abierto que permite a los desarrolladores crear chatbots conversacionales inteligentes. Rasa se basa en los principios de la IA conversacional y utiliza un enfoque modular para el desarrollo de chatbots.
-   </td>
-  </tr>
-  <tr>
-   <td>Botpress
-   </td>
-   <td>MIT
-   </td>
-   <td>Plataforma de chatbot de código abierto que permite a los desarrolladores crear chatbots conversacionales personalizados para diferentes canales de mensajería. Botpress es fácil de usar y proporciona una amplia gama de funciones para crear chatbots eficaces.
-   </td>
-  </tr>
-  <tr>
-   <td>DialogFlow
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Servicio de chatbot de código abierto de Google AI. DialogFlow permite a los desarrolladores crear chatbots conversacionales con un enfoque centrado en el usuario. DialogFlow proporciona una amplia gama de funciones para crear chatbots eficaces, incluyendo reconocimiento de voz, comprensión del lenguaje natural y generación de texto.
-   </td>
-  </tr>
-  <tr>
-   <td>BotMan
-   </td>
-   <td>MIT
-   </td>
-   <td>Framework de chatbot PHP de código abierto. BotMan es fácil de usar y proporciona una amplia gama de funciones para crear chatbots personalizados para diferentes canales de mensajería.
-   </td>
-  </tr>
-  <tr>
-   <td>Tock
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Plataforma de chatbot de código abierto. Tock permite a los desarrolladores crear chatbots conversacionales personalizados para diferentes canales de mensajería. Tock es fácil de usar y proporciona una amplia gama de funciones para crear chatbots eficaces.
-   </td>
-  </tr>
-</table>
-
-
-
-
-* Generador para Plantillas de Anuncio.
-
-Una vez que se tiene la idea general, se puede crear la plantilla del anuncio. Para ello, se puede utilizar un modelo de IA que genere texto descriptivo. El modelo puede ayudar a crear un diseño atractivo y llamativo para el anuncio.
-
-
-<table>
-  <tr>
-   <td>Nombre
-   </td>
-   <td>Licencia
-   </td>
-   <td>Descripción
-   </td>
-  </tr>
-  <tr>
-   <td>MMagic
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Es una IA de creación generativa multimodelo para procesamiento y la edición de imágenes y vídeo para investigadores e ingenieros. Es capaz de los siguiente: Generación texto-imagen, traducción imagen-imagen, generación consciente de 3d, super resolución de imagen y video, restauración de imágenes, coloración de imágenes, limpiado de imágenes, entre otros.
-   </td>
-  </tr>
-  <tr>
-   <td>Microsoft Designer
-   </td>
-   <td>OpenSource, Without limitations
-   </td>
-   <td>Microsoft Designer es una aplicación de diseño gráfico para crear contenido profesional. Es gratuita y se incluye en las suscripciones de Microsoft Office. Puedes usar imágenes premium en aplicaciones de Microsoft 365 y SharePoint, pero al usar el servicio, permites que Microsoft utilice tu contenido en sus operaciones en línea.
-   </td>
-  </tr>
-</table>
-
-
-
-
-* Generador para Imágenes de Productos.
-
-El siguiente paso es generar las imágenes del anuncio. Para ello, se puede utilizar un modelo de IA que genere imágenes realistas. El modelo puede ayudar a crear imágenes que sean atractivas y que transmitan el mensaje del anuncio.
-
-
-<table>
-  <tr>
-   <td>Nombre
-   </td>
-   <td>Licencia
-   </td>
-   <td>Descripción
-   </td>
-  </tr>
-  <tr>
-   <td>MMagic
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Es una IA de creación generativa multimodelo para procesamiento y la edición de imágenes y vídeo para investigadores e ingenieros. Es capaz de los siguiente: Generación texto-imagen, traducción imagen-imagen, generación consciente de 3d, super resolución de imagen y video, restauración de imágenes, coloración de imágenes, limpiado de imágenes, entre otros.
-   </td>
-  </tr>
-  <tr>
-   <td>Stable Diffusion Open Journey
-   </td>
-   <td>Creative ML OpenRAIL-M
-   </td>
-   <td>Hay muchas versiones de modelos Stable Diffusion los cuales son buenos para cosas muy especializadas, En esta ocasión este modelo es bueno para generar imágenes con diferentes estéticas, lo cual lo hace bueno para propósitos generales
-   </td>
-  </tr>
-  <tr>
-   <td>Stable Diffusion 
-<p>
-Realistic Vision
-   </td>
-   <td>Creative ML OpenRAIL-M
-   </td>
-   <td>Lo que caracteriza a este modelo es su alta capacidad de hacer cosas realistas y a una resolución de 768 px, lo cual es mayor a sus antecesores.
-   </td>
-  </tr>
-  <tr>
-   <td>Stable Diffusion SDXL
-   </td>
-   <td>Creative ML OpenRAIL-M
-   </td>
-   <td>Este modelo es de los más recientes lanzados por Stable Diffusion, está entrenado con muchos más parámetros y su característica es que es capaz de hacer letras correctamente en la generación de imagen.
-<p>
-Base de datos: El modelo SDXL se entrenó en un conjunto de datos masivo de imágenes y texto. Este conjunto de datos incluye imágenes de todo tipo, desde paisajes hasta retratos.
-<p>
-Tamaño: El modelo SDXL tiene 2.300 millones de parámetros. Esto es mucho más que los modelos anteriores, lo que le permite generar imágenes de mayor calidad siendo de 1024 px.
-<p>
-Capacidades: El modelo SDXL es capaz de generar imágenes de diferentes estilos, desde realistas hasta abstractos. También puede generar imágenes a partir de texto en diferentes idiomas.
-   </td>
-  </tr>
-</table>
-
-
-
-
-* Generador para Texto Publicitario.
-
-El último paso es generar el texto del anuncio. Para ello, se puede utilizar un modelo de IA que genere texto publicitario. El modelo puede ayudar a crear un texto que sea claro, conciso y atractivo.
-
-
-<table>
-  <tr>
-   <td>Nombre
-   </td>
-   <td>Licencia
-   </td>
-   <td>Descripción
-   </td>
-  </tr>
-  <tr>
-   <td>Moondance
-   </td>
-   <td>Apache 2.0
-   </td>
-   <td>Es un modelo generador de fuentes de texto modernizado en base al proyecto OutFox.
-   </td>
-  </tr>
-  <tr>
-   <td>Texture Atlas Generator
-   </td>
-   <td>MIT
-   </td>
-   <td>Un generador de texturas y fuentes para textos e imágenes.
-   </td>
-  </tr>
-</table>
-
-
-**Mejores modelos**
+**Modelos a emplear **
 
 **Chatbot para la generación de ideas. \
 ** \
@@ -358,21 +45,33 @@ Stable Diffusion SDXL es el indicado para lo que se quiere lograr en este reto, 
 
 **Generador para Texto Publicitario.** \
  \
-Moondance resulta ser un generador que nos puede ayudar en este proyecto al ser una versión modernizada de otro proyecto que fue utilizado en su momento para juegos de ritmos, por lo que parece ser suficientemente sencillo y útil, aunque podría cambiar en caso de ver una opción más factible.
+Fontjoy es un vector de fuentes con el cual se puede hacer emparejamiento de fuentes, para analizar una imagen que mejor se ajuste, esto ya que la mayoría de generadores de fuentes más complejos están detrás de un muro de pago o en una versión beta donde no tienen una api.
 
-**Conclusión \
+**Tecnologías a Utilizar **
+
+Para la implementación de este proyecto, se utilizarán las siguientes tecnologías:
+
+
+
+* **Google Colab:** Se empleará Google Colab, una plataforma basada en la nube que proporciona acceso a recursos de cómputo y aceleración GPU para entrenar modelos de manera eficiente.
+* **Librerías de Finetuning:** Para el fine-tuning de modelos generativos, se utilizarán librerías ampliamente reconocidas, como TensorFlow, PyTorch y Hugging Face Transformers, que ofrecen herramientas y pre-entrenamientos específicos para la adaptación de modelos a necesidades particulares**.**
+
+**Resultados Esperados**
+
+Al implementar esta metodología, esperamos lograr una mejora sustancial en la eficiencia y calidad de los anuncios publicitarios. Anticipamos una mayor personalización de los anuncios, adaptados a las preferencias de la audiencia, lo que aumentará su relevancia. Además, planeamos optimizar la asignación de recursos, reducir costos y tiempos de producción. La metodología se adaptará y mejorará continuamente, y se evaluará su impacto en la percepción del consumidor. 
+
+**Conclusiones**
+
+
+
+* **Implicaciones y aplicaciones potenciales: \
 **
-
-
-
-* Implicaciones y aplicaciones potenciales. \
-
 
 Las implicaciones de esta investigación se extienden a diversas esferas de la industria publicitaria y del marketing. La metodología desarrollada puede ser aplicada en campañas publicitarias de distintos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las necesidades y preferencias del público objetivo. Además, la integración de modelos generativos y chatbots puede optimizar la asignación de recursos y reducir los tiempos de producción, generando un impacto positivo en la eficiencia operativa de las agencias publicitarias.
 
 
 
-* Recomendaciones
+* **Recomendaciones:**
 
 Las recomendaciones que debemos tener en cuenta es analizar la percepción y recepción de los anuncios generados mediante esta metodología por parte de los consumidores, para evaluar su efectividad y la mejora en la conexión emocional con la audiencia.  \
  \
@@ -381,6 +80,10 @@ Investigar la adaptabilidad y respuesta de la metodología propuesta en entornos
 Explorar la posibilidad de implementar tecnologías de IA para la optimización automática de los anuncios generados, considerando el feedback y rendimiento en tiempo real para ajustes y mejoras continuas.
 
 **Referencias**
+
+Hugging Face. (2023). Hugging Face Transformers. Retrieved from 
+
+[https://huggingface.co/transformers](https://huggingface.co/transformers)
 
 OpenAI (2019). MIT License. Retrieved from [https://github.com/openai/gpt-2/blob/master/LICENSE](https://github.com/openai/gpt-2/blob/master/LICENSE)
 
@@ -394,26 +97,33 @@ Botman (2023). MIT License. Retrieved from [https://github.com/botman/botman/blo
 
 The Open Conversation Kit (2023). Apache License 2.0. Retrieved from [https://github.com/theopenconversationkit/tock/blob/master/LICENSE](https://github.com/theopenconversationkit/tock/blob/master/LICENSE)
 
-MMagic(2020). Apache License. Retrieved from
+MMagic (2020). Apache License. Retrieved from
 
 [https://github.com/open-mmlab/mmagic/blob/main/LICENSE](https://github.com/open-mmlab/mmagic/blob/main/LICENSE)
 
-Moondance(2020) Apache License. Retrieved from
+Moondance (2020) Apache License. Retrieved from
 
 [https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE.md)
 
-Texture Atlas Generator(2011). MIT License. Retrieved from
+Texture Atlas Generator (2011). MIT License. Retrieved from
 
 [https://github.com/pjohalloran/texture-atlas-generator](https://github.com/pjohalloran/texture-atlas-generator)
 
-CreativeML Open RAIL-M(2022). Stable Diffusion License. Retrieved from
+CreativeML Open RAIL-M (2022). Stable Diffusion License. Retrieved from
 
 [https://dezgo.com/license](https://dezgo.com/license)
 
-Beginner´s Guide to Stable Diffusion Models(2023). Stable Diffusion Models. Retrieved from
+Beginner´s Guide to Stable Diffusion Models (2023). Stable Diffusion Models. Retrieved from
 
 [https://stable-diffusion-art.com/models/](https://stable-diffusion-art.com/models/)
 
-From Rail to Open Rail: Topologies of rail licenses(2022). Licences Image. Retrieved from
+From Rail to Open Rail: Topologies of rail licenses (2022). Licences Image. Retrieved from
+
+[https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)
+
+FontJoy (2017). MIT License. Retrieved from 
+
+[https://fontjoy.com/?ref=theresanaiforthat](https://fontjoy.com/?ref=theresanaiforthat)
+
 
 [https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)
