@@ -22,11 +22,7 @@ La solución propuesta es la siguiente:
 Se propone esta arquitectura con la convicción de que podría permitir una creación más eficiente, al mismo tiempo que asegura la coherencia y la calidad en cada etapa del proceso de generación de anuncios.
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![RFs](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png)
 
 
 **Modelos a emplear **
