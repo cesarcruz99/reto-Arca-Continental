@@ -1,0 +1,120 @@
+# reto-Arca-Continental
+
+**Resumen**
+
+Esta investigación resalta la efectividad de una metodología compuesta por cuatro etapas para la creación de anuncios publicitarios, donde se integran modelos generativos y un chatbot. Estas mejoras en la eficiencia y calidad de los anuncios subrayan la importancia de aplicar tecnología avanzada en la industria publicitaria. Además, la metodología puede ser aplicada en diversos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las preferencias del público.
+
+**Introducción**
+
+Esta investigación se centra en una metodología compuesta por cuatro etapas esenciales para la concepción y creación de anuncios publicitarios. El enfoque de este estudio se basa en optimizar la elaboración de anuncios mediante la aplicación de tecnología avanzada, específicamente la integración de modelos generativos y un chatbot que permita definir con mayor precisión la disposición de elementos visuales y textuales en el anuncio. Este enfoque surge a partir de la observación de la necesidad de mejorar la eficiencia y calidad en la generación de contenido publicitario.
+
+**Arquitectura de la Solución**
+
+La solución propuesta es la siguiente:
+
+
+
+1. El usuario presenta una idea general.
+2. El chatbot permite la especificación precisa de la disposición de elementos visuales y textuales.
+3. Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del anuncio y otro para generar las imágenes necesarias, como productos, personas o fondos.
+4. Un modelo adicional genera el texto específico del anuncio.
+
+Se propone esta arquitectura con la convicción de que podría permitir una creación más eficiente, al mismo tiempo que asegura la coherencia y la calidad en cada etapa del proceso de generación de anuncios.
+
+
+![RFs](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png)
+
+
+**Modelos a emplear **
+
+**Chatbot para la generación de ideas. \
+** \
+El mejor chatbot para este caso es **GPT-2**, ya que tiene una capacidad generativa avanzada para generar texto coherente y de calidad, lo esencial para la creación efectiva de texto publicitario, al igual su eficiencia y calidad en la generación de texto, GPT-2 se destaca por ofrecer una calidad de generacion de texto relativamente alta en comparación de los otros modelos generativos.
+
+**Generador para Plantillas de Anuncio.**
+
+MMagic es un generador de imágenes y video que dispone de muchas opciones para la generación de estas presentando texto y formas geométricas simples para obtener algo nuevo y bastante realista, por lo que su uso nos beneficiará en varios aspectos de la creación, modificación y escalado de resolución de imágenes para que estas se ven excelentemente con combinaciones de colores muy naturales.
+
+**Generador para Imágenes de Productos.**
+
+Stable Diffusion SDXL es el indicado para lo que se quiere lograr en este reto, debido a su alta y buena capacidad de generación, además de no solo generar objetos, sino también letraz, lo cual es un pedazo importante para lograr que nuestro modelo pueda generar lo que se está solicitando.
+
+**Generador para Texto Publicitario.** \
+ \
+Fontjoy es un vector de fuentes con el cual se puede hacer emparejamiento de fuentes, para analizar una imagen que mejor se ajuste, esto ya que la mayoría de generadores de fuentes más complejos están detrás de un muro de pago o en una versión beta donde no tienen una api.
+
+**Tecnologías a Utilizar **
+
+Para la implementación de este proyecto, se utilizarán las siguientes tecnologías:
+
+
+
+* **Google Colab:** Se empleará Google Colab, una plataforma basada en la nube que proporciona acceso a recursos de cómputo y aceleración GPU para entrenar modelos de manera eficiente.
+* **Librerías de Finetuning:** Para el fine-tuning de modelos generativos, se utilizarán librerías ampliamente reconocidas, como TensorFlow, PyTorch y Hugging Face Transformers, que ofrecen herramientas y pre-entrenamientos específicos para la adaptación de modelos a necesidades particulares**.**
+
+**Resultados Esperados**
+
+Al implementar esta metodología, esperamos lograr una mejora sustancial en la eficiencia y calidad de los anuncios publicitarios. Anticipamos una mayor personalización de los anuncios, adaptados a las preferencias de la audiencia, lo que aumentará su relevancia. Además, planeamos optimizar la asignación de recursos, reducir costos y tiempos de producción. La metodología se adaptará y mejorará continuamente, y se evaluará su impacto en la percepción del consumidor. 
+
+**Conclusiones**
+
+
+
+* **Implicaciones y aplicaciones potenciales: \
+**
+
+Las implicaciones de esta investigación se extienden a diversas esferas de la industria publicitaria y del marketing. La metodología desarrollada puede ser aplicada en campañas publicitarias de distintos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las necesidades y preferencias del público objetivo. Además, la integración de modelos generativos y chatbots puede optimizar la asignación de recursos y reducir los tiempos de producción, generando un impacto positivo en la eficiencia operativa de las agencias publicitarias.
+
+
+
+* **Recomendaciones:**
+
+Las recomendaciones que debemos tener en cuenta es analizar la percepción y recepción de los anuncios generados mediante esta metodología por parte de los consumidores, para evaluar su efectividad y la mejora en la conexión emocional con la audiencia.  \
+ \
+Investigar la adaptabilidad y respuesta de la metodología propuesta en entornos publicitarios cambiantes y dinámicos, considerando la evolución constante de las preferencias y tendencias de los consumidores. \
+ \
+Explorar la posibilidad de implementar tecnologías de IA para la optimización automática de los anuncios generados, considerando el feedback y rendimiento en tiempo real para ajustes y mejoras continuas.
+
+**Referencias**
+
+Hugging Face. (2023). Hugging Face Transformers. Retrieved from 
+
+[https://huggingface.co/transformers](https://huggingface.co/transformers)
+
+OpenAI (2019). MIT License. Retrieved from [https://github.com/openai/gpt-2/blob/master/LICENSE](https://github.com/openai/gpt-2/blob/master/LICENSE)
+
+RasaHQ (2023). Apache License 2.0. Retrieved from  [https://github.com/RasaHQ/rasa/blob/main/LICENSE.txt](https://github.com/RasaHQ/rasa/blob/main/LICENSE.txt)
+
+Botpress (2023). MIT License. Retrieved from [https://github.com/botpress/botpress/blob/master/LICENSE](https://github.com/botpress/botpress/blob/master/LICENSE)
+
+Google Cloud Platform (2023). Apache License 2.0. Retrieved from [https://github.com/GoogleCloudPlatform/dialogflow-chatbot/blob/master/LICENSE](https://github.com/GoogleCloudPlatform/dialogflow-chatbot/blob/master/LICENSE)
+
+Botman (2023). MIT License. Retrieved from [https://github.com/botman/botman/blob/2.0/LICENSE](https://github.com/botman/botman/blob/2.0/LICENSE)
+
+The Open Conversation Kit (2023). Apache License 2.0. Retrieved from [https://github.com/theopenconversationkit/tock/blob/master/LICENSE](https://github.com/theopenconversationkit/tock/blob/master/LICENSE)
+
+MMagic (2020). Apache License. Retrieved from
+
+[https://github.com/open-mmlab/mmagic/blob/main/LICENSE](https://github.com/open-mmlab/mmagic/blob/main/LICENSE)
+
+Moondance (2020) Apache License. Retrieved from
+
+[https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE.md)
+
+Texture Atlas Generator (2011). MIT License. Retrieved from
+
+[https://github.com/pjohalloran/texture-atlas-generator](https://github.com/pjohalloran/texture-atlas-generator)
+
+CreativeML Open RAIL-M (2022). Stable Diffusion License. Retrieved from
+
+[https://dezgo.com/license](https://dezgo.com/license)
+
+Beginner´s Guide to Stable Diffusion Models (2023). Stable Diffusion Models. Retrieved from
+
+[https://stable-diffusion-art.com/models/](https://stable-diffusion-art.com/models/)
+
+From Rail to Open Rail: Topologies of rail licenses (2022). Licences Image. Retrieved from
+
+[https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)
+
+FontJoy (2017). MIT License. Retrieved from 
