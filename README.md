@@ -1,125 +1,49 @@
-# reto-Arca-Continental
-
-**Resumen**
-
-Esta investigación resalta la efectividad de una metodología compuesta por cuatro etapas para la creación de anuncios publicitarios, donde se integran modelos generativos y un chatbot. Estas mejoras en la eficiencia y calidad de los anuncios subrayan la importancia de aplicar tecnología avanzada en la industria publicitaria. Además, la metodología puede ser aplicada en diversos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las preferencias del público.
+**Primer MVP**
 
 **Introducción**
 
-Esta investigación se centra en una metodología compuesta por cuatro etapas esenciales para la concepción y creación de anuncios publicitarios. El enfoque de este estudio se basa en optimizar la elaboración de anuncios mediante la aplicación de tecnología avanzada, específicamente la integración de modelos generativos y un chatbot que permita definir con mayor precisión la disposición de elementos visuales y textuales en el anuncio. Este enfoque surge a partir de la observación de la necesidad de mejorar la eficiencia y calidad en la generación de contenido publicitario.
-
-**Arquitectura de la Solución**
-
-La solución propuesta es la siguiente:
+El objetivo de este proyecto es crear un sistema de IA generativa que pueda ayudar a las personas a crear anuncios de Coca-Cola. El sistema tendrá tres componentes principales:
 
 
 
-1. El usuario presenta una idea general.
-2. El chatbot permite la especificación precisa de la disposición de elementos visuales y textuales.
-3. Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del anuncio y otro para generar las imágenes necesarias, como productos, personas o fondos.
-4. Un modelo adicional genera el texto específico del anuncio.
+* Un chatbot que podrá generar ideas generales para los anuncios.
+* Un modelo de imágenes generativo que podrá crear imágenes de Coca-Cola, personas, paisajes, etc.
+* Un modelo de texto generativo que podrá crear texto para los anuncios.
 
-Se propone esta arquitectura con la convicción de que podría permitir una creación más eficiente, al mismo tiempo que asegura la coherencia y la calidad en cada etapa del proceso de generación de anuncios.
+Este reporte se centrará en la explicación de los notebooks de los modelos que se probaron para el proyecto.
 
+**Notebook Llama 2**
 
-![RFs](https://github.com/cesarcruz99/reto-Arca-Continental/blob/main/ImageReadme/req%20IA.drawio%20(1).png)
+En el notebook de Llama-2, utilizaremos el modelo de Llama-2, un modelo de lenguaje de código abierto desarrollado por Meta AI. Este modelo de transformador está pre-entrenado en un vasto conjunto de datos que abarca tanto texto como código. Llama-2 es capaz de generar texto, traducir idiomas, crear diversos tipos de contenido creativo y responder preguntas con información precisa. Además, en este contexto, Llama-2 actuará como un chatbot, proporcionando ideas para especificaciones, generación de texto para modelos generativos de imágenes y mejoras para anuncios de Coca-Cola.
 
+Un aspecto destacado de este notebook es la creación y despliegue de una interfaz web amigable para el usuario. Esta interfaz tiene la capacidad de realizar tareas de generación de texto, traducción de idiomas y responder preguntas. Todo esto se logra gracias al sólido modelo de lenguaje Llama-2-7b-chat-hf.
 
-**Modelos a emplear **
+El proceso comienza con la adquisición e instalación del software y archivos necesarios, asegurando que todos los requisitos previos estén en su lugar para garantizar una ejecución sin contratiempos. Posteriormente, se inicia la interfaz web.
 
-**Chatbot para la generación de ideas. \
-** \
-El mejor chatbot para este caso es **GPT-2**, ya que tiene una capacidad generativa avanzada para generar texto coherente y de calidad, lo esencial para la creación efectiva de texto publicitario, al igual su eficiencia y calidad en la generación de texto, GPT-2 se destaca por ofrecer una calidad de generacion de texto relativamente alta en comparación de los otros modelos generativos.
+Una vez que la interfaz web está en funcionamiento, los usuarios pueden acceder a ella fácilmente simplemente navegando a http://localhost:7860 en sus navegadores web. En esta interfaz de usuario, los usuarios pueden ingresar sus solicitudes, y la plataforma responderá de inmediato generando texto, facilitando la traducción de idiomas o proporcionando respuestas a sus preguntas.
 
-**Generador para Plantillas de Anuncio.**
+**Notebook SDXL TUNED**
 
-MMagic es un generador de imágenes y video que dispone de muchas opciones para la generación de estas presentando texto y formas geométricas simples para obtener algo nuevo y bastante realista, por lo que su uso nos beneficiará en varios aspectos de la creación, modificación y escalado de resolución de imágenes para que estas se ven excelentemente con combinaciones de colores muy naturales.
+Este cuaderno Colab tiene un objetivo específico: entrenar y desplegar un modelo de generación de imágenes basado en indicaciones textuales. Se ofrece a los usuarios un proceso de configuración simplificado, que les permite configurar varios aspectos del proyecto. Estos parámetros incluyen la elección del modelo, el nombre del proyecto, el prompt y los hiperparámetros esenciales para el entrenamiento. En particular, el código permite enviar el modelo entrenado al centro de modelos Hugging Face, una plataforma para compartir modelos pre-entrenados. Tras la configuración, se inicia el proceso de entrenamiento, aprovechando el modelo seleccionado y los parámetros definidos por el usuario. Además, se incluye una sección de inferencia posterior al entrenamiento en la que se demuestra la capacidad del modelo para generar imágenes a partir de mensajes de texto.
 
-**Generador para Imágenes de Productos.**
+Se hizo un intento de utilizar AutoTrain DreamBooth para realizar fine-tuning de un modelo con imágenes de latas de Coca-Cola. Sin embargo, se encontró que las bibliotecas en el entorno de Colab no estaban actualizadas y no coincidían con las requeridas por la biblioteca xTransformers. Como resultado, en este momento, solo se pudo realizar un primer intento de cómo se vería una lata de Coca-Cola utilizando el modelo sin aplicar el proceso de fine-tuning.
 
-Stable Diffusion SDXL es el indicado para lo que se quiere lograr en este reto, debido a su alta y buena capacidad de generación, además de no solo generar objetos, sino también letraz, lo cual es un pedazo importante para lograr que nuestro modelo pueda generar lo que se está solicitando.
+**Notebook Fontjoy**
 
-**Generador para Texto Publicitario.** \
- \
-Fontjoy es un vector de fuentes con el cual se puede hacer emparejamiento de fuentes, para analizar una imagen que mejor se ajuste, esto ya que la mayoría de generadores de fuentes más complejos están detrás de un muro de pago o en una versión beta donde no tienen una api.
+En este cuaderno se encuentra incrustada la página de Fontjoy, una página de generación de combinaciones de estilos de textos por medio del uso del emparejamiento de estilos, el cual tiene como base el usar vectores de estilos, el cual percibe los estilos en base a ciertos factores y los coloca en base a sus valores en cada vector. La selección de estilos de la que se pueden elegir son todos parte de google font, por lo que son gratuitos y de libre uso comercial.
 
-**Tecnologías a Utilizar **
+Una de las particularidades de la página bajo la cual fue creada consiste en que puedes ajustar la generación de los estilos a utilizar en sus combinaciones en base a los contrastes que se deseen en relación con otros estilos, siendo capaz de bloquear unos estilos para que estos no cambien mientras que se continúa buscando por otro estilo en caso de encontrar uno que no resulte ser el deseado.
 
-Para la implementación de este proyecto, se utilizarán las siguientes tecnologías:
+**Oportunidades de mejora**
 
+**Llama 2: **
 
+En particular, la velocidad y la capacidad de respuesta de la interfaz de usuario (UI) podrían optimizarse para una experiencia más fluida. En algunos casos, la UI podría haber mostrado un rendimiento lento, lo que podría desanimar a los usuarios. Considerar la optimización de la UI, quizás mediante la implementación de técnicas de carga diferida o mejora del procesamiento en segundo plano, podría ser un valioso avance.
 
-* **Google Colab:** Se empleará Google Colab, una plataforma basada en la nube que proporciona acceso a recursos de cómputo y aceleración GPU para entrenar modelos de manera eficiente.
-* **Librerías de Finetuning:** Para el fine-tuning de modelos generativos, se utilizarán librerías ampliamente reconocidas, como TensorFlow, PyTorch y Hugging Face Transformers, que ofrecen herramientas y pre-entrenamientos específicos para la adaptación de modelos a necesidades particulares**.**
+**SDXL:**
 
-**Resultados Esperados**
+Una oportunidad de mejora se presenta en la posibilidad de realizar un proceso de fine-tuning en futuras iteraciones de este cuaderno. Esto permitiría abordar los desafíos experimentados en la generación de imágenes de latas de Coca-Cola, las cuales mostraron ciertas deficiencias en su calidad y en la coherencia del texto asociado. La ejecución de un proceso de fine-tuning podría optimizar y ajustar el modelo para obtener resultados de mayor precisión y cohesión en la generación de contenido visual y textual.
 
-Al implementar esta metodología, esperamos lograr una mejora sustancial en la eficiencia y calidad de los anuncios publicitarios. Anticipamos una mayor personalización de los anuncios, adaptados a las preferencias de la audiencia, lo que aumentará su relevancia. Además, planeamos optimizar la asignación de recursos, reducir costos y tiempos de producción. La metodología se adaptará y mejorará continuamente, y se evaluará su impacto en la percepción del consumidor. 
+**Fontjoy**:
 
-**Conclusiones**
-
-
-
-* **Implicaciones y aplicaciones potenciales: \
-**
-
-Las implicaciones de esta investigación se extienden a diversas esferas de la industria publicitaria y del marketing. La metodología desarrollada puede ser aplicada en campañas publicitarias de distintos sectores, permitiendo la creación ágil y personalizada de anuncios adaptados a las necesidades y preferencias del público objetivo. Además, la integración de modelos generativos y chatbots puede optimizar la asignación de recursos y reducir los tiempos de producción, generando un impacto positivo en la eficiencia operativa de las agencias publicitarias.
-
-
-
-* **Recomendaciones:**
-
-Las recomendaciones que debemos tener en cuenta es analizar la percepción y recepción de los anuncios generados mediante esta metodología por parte de los consumidores, para evaluar su efectividad y la mejora en la conexión emocional con la audiencia.  \
- \
-Investigar la adaptabilidad y respuesta de la metodología propuesta en entornos publicitarios cambiantes y dinámicos, considerando la evolución constante de las preferencias y tendencias de los consumidores. \
- \
-Explorar la posibilidad de implementar tecnologías de IA para la optimización automática de los anuncios generados, considerando el feedback y rendimiento en tiempo real para ajustes y mejoras continuas.
-
-**Referencias**
-
-Hugging Face. (2023). Hugging Face Transformers. Retrieved from 
-
-[https://huggingface.co/transformers](https://huggingface.co/transformers)
-
-OpenAI (2019). MIT License. Retrieved from [https://github.com/openai/gpt-2/blob/master/LICENSE](https://github.com/openai/gpt-2/blob/master/LICENSE)
-
-RasaHQ (2023). Apache License 2.0. Retrieved from  [https://github.com/RasaHQ/rasa/blob/main/LICENSE.txt](https://github.com/RasaHQ/rasa/blob/main/LICENSE.txt)
-
-Botpress (2023). MIT License. Retrieved from [https://github.com/botpress/botpress/blob/master/LICENSE](https://github.com/botpress/botpress/blob/master/LICENSE)
-
-Google Cloud Platform (2023). Apache License 2.0. Retrieved from [https://github.com/GoogleCloudPlatform/dialogflow-chatbot/blob/master/LICENSE](https://github.com/GoogleCloudPlatform/dialogflow-chatbot/blob/master/LICENSE)
-
-Botman (2023). MIT License. Retrieved from [https://github.com/botman/botman/blob/2.0/LICENSE](https://github.com/botman/botman/blob/2.0/LICENSE)
-
-The Open Conversation Kit (2023). Apache License 2.0. Retrieved from [https://github.com/theopenconversationkit/tock/blob/master/LICENSE](https://github.com/theopenconversationkit/tock/blob/master/LICENSE)
-
-MMagic (2020). Apache License. Retrieved from
-
-[https://github.com/open-mmlab/mmagic/blob/main/LICENSE](https://github.com/open-mmlab/mmagic/blob/main/LICENSE)
-
-Moondance (2020) Apache License. Retrieved from
-
-[https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE](https://github.com/TeamRizu/Texture-Font-Generator-2020-Squirrel/blob/main/LICENSE.md)
-
-Texture Atlas Generator (2011). MIT License. Retrieved from
-
-[https://github.com/pjohalloran/texture-atlas-generator](https://github.com/pjohalloran/texture-atlas-generator)
-
-CreativeML Open RAIL-M (2022). Stable Diffusion License. Retrieved from
-
-[https://dezgo.com/license](https://dezgo.com/license)
-
-Beginner´s Guide to Stable Diffusion Models (2023). Stable Diffusion Models. Retrieved from
-
-[https://stable-diffusion-art.com/models/](https://stable-diffusion-art.com/models/)
-
-From Rail to Open Rail: Topologies of rail licenses (2022). Licences Image. Retrieved from
-
-[https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)
-
-FontJoy (2017). MIT License. Retrieved from 
-
-[https://fontjoy.com/?ref=theresanaiforthat](https://fontjoy.com/?ref=theresanaiforthat)
-
-
-[https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)
+En cuanto a Fontjoy si bien es de uso libre y puede ayudar mucho a elegir a seleccionar un estilo siendo ya una herramienta utilizada ya por diseñadores, esta tiene varios fallos, en primer lugar no dispone de una API, dado eso fue la necesidad de incrustar la página en el notebook, los demás problemas son en relación a las medidas de distancias vectoriales de los vectores de estilos, ya que pueden tener magnitudes similares entre sí que conlleven a un resultado no tan deseado. Sin embargo la mayoría de las alternativas requieren de un coste monetario o no disponen de un API o alguna otra forma de utilizarlo como la incrustación en este caso.
