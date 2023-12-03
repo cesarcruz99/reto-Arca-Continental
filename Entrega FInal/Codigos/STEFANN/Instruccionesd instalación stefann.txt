@@ -1,0 +1,35 @@
+Para poder correr stefann se necesita lo siguiente
+
+Contar con Python y Pip instalados, las versiones de estos pueden ser 3.7.7 en adelante(Python) y 20.0.2(Pip) en adelante, el cóodigo fue escrito específicamente con esas versiones
+Tener en cuenta que las últimas versiones de python pueden ser incompatibles con alguno de los paquetes a continuiación, como puede ser el caso de tensorflow si la versión de python es muy reciente
+
+Instalar paquetes con:
+pip install
+o
+python -m pip install
+
+Paquete  Versión Preferente
+Numpy		1.18.1
+Requests	2.23.0
+TensorFlow	2.1.0
+Keras		2.3.1
+Pillow		7.0.0
+Colorama	0.4.3
+OpenCV		4.2.0
+PyQt5		5.14.2
+
+Una vez con los paquetes instalados, abrir el simbolo de sistema(u otro command prompt como anaconda por ejemplo) y dirigirse a la carpeta de "release" de la carpeta stefann por medio del comando "cd", después correr el archivo de stefann.py escribiendo "python stefann.py"
+
+En caso de querer entrenar el modelo, será necesario lo siguiente:
+
+-Instalar anaconda
+
+-Abrir conda prompt
+
+-Activar los ecosistemas de stefann dentro de la carpeta release por medio de los siguientes comandos:
+	conda activate stefann-cpu
+	conda activate stefann-gpu
+
+-Ir a la carpeta stefann por medio del comando "cd"
+
+-Abrir y cambiar las configuraciones de los archivos fannet.py o colornet.py y comenzar a entrenar el modelo correspondiente
