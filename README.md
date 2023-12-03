@@ -59,6 +59,7 @@ En esta parte se hizo lo siguiente:
       * Stable Diffusion SDXL: Este modelo es de los más recientes lanzados por Stable Diffusion, está entrenado con 
         muchos más parámetros y su característica es que es capaz de hacer letras correctamente en la generación de 
         imagen.
+  
   **Nota:** Para saber mas acerca de esta investigacion ir a la carpeta de Docs del repositorio.
 
 
