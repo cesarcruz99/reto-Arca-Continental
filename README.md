@@ -3,7 +3,7 @@
 
 ## En que consiste
 
-Este repositorio contiene archivos utilizados para resolver la problemática que se nos planteo por parte de la empresa Arca Continental, donde el objetivo era crear un framework, en donde aplicaramos nuestros conocimiento de Inteligencia Artifical, para crear anuncios que se pudieran colocar en tiendas de México, para esto,nuestra solución plantea lo siguiente:
+Este repositorio contiene archivos utilizados para resolver la problemática que se nos planteo por parte de la empresa Arca Continental, donde el objetivo era crear un framework, en donde aplicaramos nuestros conocimiento de Inteligencia Artifical, para crear anuncios que se pudieran colocar en tiendas de México, para esto, nuestra solución plantea lo siguiente:
 
 El usuario inicia el proceso en una interfaz intuitiva, generando prompts a través de la aplicación.
 ChatGPT-3.5, modificado con una fórmula mejorada para la generación de prompts efectivos, responde
@@ -87,7 +87,7 @@ En la carpeta de nombre Primer_MVP_models, se pueden encontrar los notebooks uti
      * Chatgpt-3.5: Se cambio a chatgpt-3.5 debido a que es un modelo que gana en todas las métricas a llama-2 y no          requiere hosting.
      * Stable-difussion (SDXL): Se mantuvo el uso de SDXL, para generar las images se hizo fine-tuning al modelo con         el entrenamiento Dreambooth-LoRA, se utilizó un script para poder usar los LoRA en AUTOMATIC1111. Se                   entrenaron un total de 4 modelos LoRA, para Coca-cola,Sprite, fanta y fondos para el anuncio.
      * Automatic111: Proponemos AUTOMATIC1111 como graphical user interface (GUI).
-     * STEFANN: Con este modelo de redes neuronales, se puede modificar el texto de las imágenes generadas con SDXL.
+     * STEFANN: Con esta combinación de redes neuronales, se puede modificar el texto de las imágenes generadas con SDXL.
      * Microsofts Designer: Uso de Microsoft Designer para agregar texto, quitar fondos de imágenes, juntar los              fondos con las imagenes de los productos y refinamientos que se tengan que implementar en el anuncio.
 
 **Nota:** Se recomienda ir a la carpeta de "Entrega Final" al ar pdf con el mismo nombre,para ver toda la propuesta de solución y resultados.
