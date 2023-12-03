@@ -62,6 +62,19 @@ En esta parte se hizo lo siguiente:
   
   **Nota:** Para saber mas acerca de esta investigacion ir a la carpeta de Docs del repositorio.
 
+  ### **Propuesta de solución al reto**: 15 de octubre del 2023
+
+* Arquitectura de la Solución
+La solución propuesta es la siguiente:
+1. El usuario presenta una idea general.
+2. El chatbot permite la especificación precisa de la disposición de elementos visuales
+y textuales.
+3. Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del
+anuncio y otro para generar las imágenes necesarias, como productos, personas o
+fondos.
+4. Un modelo adicional genera el texto específico del anuncio.
+
+
 
 
 
