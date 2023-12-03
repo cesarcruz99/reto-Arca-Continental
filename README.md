@@ -52,7 +52,7 @@ En esta parte se hizo lo siguiente:
         siempre y cuando esto esté dentro de las capacidades del programa para llenar espacios vacíos.
       * Que los modelos sean Open-Source para poder modificarlos y usarlos libremente.
 
-* Mejores modelos:
+  * Mejores modelos:
       * GPT-2: Chatbot de gran modelo de lenguaje preentrenado de OpenAI.
       * Llama-2: Llama 2 es un modelo de lenguaje grande (LLM) desarrollado por Meta AI.
       * Microsoft-Designer: Microsoft Designer es una aplicación de diseño gráfico para crear contenido profesional.
