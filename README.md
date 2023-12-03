@@ -32,6 +32,42 @@ texto u otros elementos gráficos según sus necesidades específicas.
 **Mario Javier Soriano Aguilera**
 ---
 #### **Recopilación de potenciales modelos generativos**: 9 de octubre del 2023
+En esta parte se hizo lo siguiente: 
+*  Plantear los Objetivos de las investigacion:
+      * Analizar la eficacia y versatilidad de la metodología propuesta para la creación de
+        anuncios publicitarios
+      * Evaluar la precisión y capacidad de adaptación del chatbot en la definición detallada
+        de la disposición de elementos visuales y textuales en el anuncio.
+      * Investigar la eficiencia y calidad de los modelos generativos en la creación de la
+        plantilla del fondo del anuncio, la representación de productos a exhibir y la
+        generación de texto específico.
+
+*  Los requerimentos para los modelos investigados fueron:
+      * Ingresar datos de entrada iniciales: El usuario debe introducir usando lenguaje natural
+        los datos descriptivos del resultado que se desea.
+      * Seleccionar resultados del proceso de imagen: El usuario seleccionará entre las opciones
+        producidas para el tercer paso que consiste en generar varias imágenes que pueden encajar con
+        la descripción del diseño del producto.
+      * Corregir apartados del anuncio: El usuario será capaz de modificar la imagen final
+        siempre y cuando esto esté dentro de las capacidades del programa para llenar espacios vacíos.
+      * Que los modelos sean Open-Source para poder modificarlos y usarlos libremente.
+
+* Mejores modelos:
+      * GPT-2: Chatbot de gran modelo de lenguaje preentrenado de OpenAI.
+      * Llama-2: Llama 2 es un modelo de lenguaje grande (LLM) desarrollado por Meta AI.
+      * Microsoft-Designer: Microsoft Designer es una aplicación de diseño gráfico para crear contenido profesional.
+      * Stable Diffusion SDXL: Este modelo es de los más recientes lanzados por Stable Diffusion, está entrenado con 
+        muchos más parámetros y su característica es que es capaz de hacer letras correctamente en la generación de 
+        imagen.
+  ** Nota: ** Para saber mas acerca de esta investigacion ir a la carpeta de Docs del repositorio.
+
+
+
+
+
+
+      
+
 
 
 
