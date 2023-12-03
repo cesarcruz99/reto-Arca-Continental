@@ -2,6 +2,7 @@
 ---
 
 ## En que consiste
+
 Este repositorio contiene archivos utilizados para resolver la problemática que se nos planteo por parte de la empresa Arca Continental, donde el objetivo era crear un framework, en donde aplicaramos nuestros conocimiento de Inteligencia Artifical, para crear anuncios que se pudieran colocar en tiendas de Mexico, para esto,nuestra solucion plantea lo siguiente:
 
 El usuario inicia el proceso en una interfaz intuitiva, generando prompts a través de la aplicación.
