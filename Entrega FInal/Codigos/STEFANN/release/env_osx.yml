@@ -1,0 +1,17 @@
+name: stefann-cpu
+channels:
+  - defaults
+dependencies:
+  - colorama
+  - keras
+  - numpy
+  - pillow
+  - pip
+  - python
+  - requests
+  - pip:
+      - tensorflow==2.1.0
+      - opencv-python==4.1.0.*
+      - opencv-contrib-python-headless
+      - pyqt5
+prefix: ./env/stefann-cpu
