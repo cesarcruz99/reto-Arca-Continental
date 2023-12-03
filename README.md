@@ -66,13 +66,15 @@ En esta parte se hizo lo siguiente:
 
 * Arquitectura de la Solución
 La solución propuesta es la siguiente:
-1. El usuario presenta una idea general.
-2. El chatbot permite la especificación precisa de la disposición de elementos visuales
-y textuales.
-3. Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del
-anuncio y otro para generar las imágenes necesarias, como productos, personas o
-fondos.
-4. Un modelo adicional genera el texto específico del anuncio.
+     - El usuario presenta una idea general.
+     - El chatbot permite la especificación precisa de la disposición de elementos visuales
+       y textuales.
+     - Dos modelos generativos se utilizan en paralelo: uno para crear la plantilla del
+       anuncio y otro para generar las imágenes necesarias, como productos, personas o
+       fondos.
+     - Un modelo adicional genera el texto específico del anuncio.
+       
+**Nota:** Para saber mas acerca de la primera solucion planetada ir a la carpeta de Docs al archivo de "Propuesta de solución al reto" del repositorio.
 
 
 
